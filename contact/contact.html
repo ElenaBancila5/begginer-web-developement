@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/img" href="../logo.png" />
+    <link rel="stylesheet" href="../index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Concert+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <header class="fixed-bar">
+        <h1 class="page-title">Elena's World</h1>
+    </header>
+    <nav>
+        <ul  class="navigation">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <form class="form" action="getData.txt" method="get">
+        <ul>
+            <li>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name" oninput="checkInput()"/>
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" oninput="checkInput()">
+            </li>
+            <li>
+                <label for="msg">Mesage</label>
+                <textarea name="user_mesage" id="msg" cols="30" rows="10" oninput="checkInput()" ></textarea>
+            </li>
+            <li class="submit">
+                <button class="submit-button" type="submit" disabled>Sent</button>
+            </li>
+        </ul>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
